@@ -40,8 +40,9 @@ import {
   SiApachemaven,
   SiCplusplus,
   SiArduino,
+  SiFastapi,
 } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandFramerMotion, TbGraph } from "react-icons/tb";
 import css from "styled-jsx/css";
 const BASE_PATH = "/assets/projects-screenshots";
 
@@ -300,6 +301,18 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiArduino />,
   },
+  fastapi: {
+    title: "FastAPI",
+    bg: "black",
+    fg: "white",
+    icon: <SiFastapi />,
+  },
+  langgraph: {
+    title: "LangGraph",
+    bg: "black",
+    fg: "white",
+    icon: <TbGraph />,
+  },
 };
 export type Project = {
   id: string;
@@ -314,7 +327,234 @@ export type Project = {
 };
 const projects: Project[] = [
   {
-    // 01. Healthcare App (In Progress)
+    // 01. ALTER
+    id: "ALTER",
+    category: "AI Learning Platform",
+    title: "ALTER",
+    src: "/assets/projects-screenshots/ALTER/ALTER-01.png",
+    screenshots: [
+      "/assets/projects-screenshots/ALTER/ALTER-01.png",
+    ],
+    github: "https://github.com/Subikshan0612/ALTER.git",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.next, // Next.js
+        PROJECT_SKILLS.ts, // TypeScript
+        PROJECT_SKILLS.react, // React.js
+        PROJECT_SKILLS.tailwind, // Tailwind CSS
+      ],
+      backend: [
+        PROJECT_SKILLS.python, // Python
+        PROJECT_SKILLS.node, // Node.js
+        PROJECT_SKILLS.openai, // OpenAI
+        PROJECT_SKILLS.postgres, // PostgreSQL
+        PROJECT_SKILLS.fastapi, // FastAPI
+        PROJECT_SKILLS.langgraph, // LangGraph
+        PROJECT_SKILLS.mongo, // MongoDB
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            An agentic AI learning platform where a team of specialized AI
+            agents work together to guide you through your learning journey.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">
+            Multi-Agent Learning Architecture
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            ALTER is built around multiple specialized AI agents — an
+            Advisor, Librarian, Tutor, Editor, and Roommate — each handling a
+            distinct part of the learning experience, from guidance and
+            knowledge retrieval to hands-on tutoring and feedback.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/ALTER/ALTER-04.png`]}
+          />
+          <TypographyH3 className="my-4 ">
+            AI-Assisted Knowledge Retrieval
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            The Librarian agent surfaces relevant knowledge on demand, while
+            the Advisor and Tutor agents combine that context with
+            personalized guidance to keep learning focused and effective.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/ALTER/ALTER-05.png`]}
+          />
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+
+          <p className="font-mono mb-2">
+            Agentic AI collaboration, personalized guidance, AI-assisted
+            knowledge retrieval, and an interactive learning experience come
+            together to make studying feel like working with a whole team.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/ALTER/ALTER-02.png`,
+              `${BASE_PATH}/ALTER/ALTER-03.png`,
+            ]}
+          />
+          <p className="font-mono mb-2 mt-8 text-center">
+            ALTER turns learning into a guided, multi-agent experience rather
+            than a solo grind.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    // 02. EOI
+    id: "EOI",
+    category: "Guest Intelligence Platform",
+    title: "EOI",
+    src: "/assets/projects-screenshots/EOI/EOI-01.png",
+    screenshots: [
+      "/assets/projects-screenshots/EOI/EOI-01.png",
+    ],
+    github: "https://github.com/Subikshan0612/EOI---Guest-Intelligence.git",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react, // React.js
+        PROJECT_SKILLS.js, // JavaScript
+        PROJECT_SKILLS.vite, // Vite
+        PROJECT_SKILLS.css, // CSS3
+      ],
+      backend: [
+        PROJECT_SKILLS.node, // Node.js
+        PROJECT_SKILLS.express, // Express.js
+        PROJECT_SKILLS.mongo, // MongoDB
+        PROJECT_SKILLS.python, // Python
+        PROJECT_SKILLS.fastapi, // FastAPI
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            An AI-powered guest intelligence platform for service apartments
+            and hospitality operators, turning scattered guest and property
+            signals into clear operational insight.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">
+            Signal-to-Intelligence Pipeline
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            EOI ingests operational signals from guest stays and property
+            units, builds deterministic context around them, and runs that
+            context through AI to surface real intelligence — not just raw
+            data — about what&apos;s happening across a property.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/EOI/EOI-02.png`]}
+          />
+          <TypographyH3 className="my-4 ">
+            Decisions, Actions & Learning
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            Every piece of intelligence feeds a decision-and-action loop —
+            from recommended next steps to logged outcomes — so the system
+            keeps learning from what worked and closes the gap between
+            insight and operational response.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/EOI/EOI-03.png`]}
+          />
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+
+          <p className="font-mono mb-2">
+            Multi-tenant workspace architecture, guest and stay profiles,
+            contextual AI intelligence generation, and a conversational
+            interface bring operational intelligence into one connected
+            workflow for hospitality teams.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/EOI/EOI-04.png`]}
+          />
+          <p className="font-mono mb-2 mt-8 text-center">
+            EOI turns fragmented hospitality data into a continuous loop of
+            intelligence, decisions, and learning.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    // 03. SIGNAL IQ
+    id: "SIGNAL IQ",
+    category: "AI Business Intelligence",
+    title: "SIGNAL IQ",
+    src: "/assets/projects-screenshots/Subikshanprojects/LandingPage.png",
+    screenshots: [
+      "/assets/projects-screenshots/Subikshanprojects/LandingPage.png",
+    ],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.next, // Next.js
+        PROJECT_SKILLS.ts, // TypeScript
+        PROJECT_SKILLS.react, // React.js
+        PROJECT_SKILLS.tailwind, // Tailwind CSS
+      ],
+      backend: [
+        PROJECT_SKILLS.python, // Python
+        PROJECT_SKILLS.node, // Node.js
+        PROJECT_SKILLS.openai, // OpenAI
+        PROJECT_SKILLS.mongo, // MongoDB
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            An AI-powered prospecting platform that helps you find and
+            monitor the business leads that actually matter.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">
+            AI-Powered Prospecting
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            SIGNAL IQ identifies relevant companies and prospects, then uses
+            AI to surface the opportunities most worth acting on, cutting
+            through the noise of manual lead research.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/Subikshanprojects/LandingPage.png`]}
+          />
+          <TypographyH3 className="my-4 ">
+            Business Signal Tracking
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            The platform tracks business signals and online/social activity
+            in real time, so outreach can be timed around what&apos;s
+            actually happening with a prospect.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/Subikshanprojects/LandingPage.png`]}
+          />
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+
+          <p className="font-mono mb-2">
+            Company and prospect discovery, business signal monitoring, and
+            AI-surfaced opportunities combine to make targeted outreach
+            faster and smarter.
+          </p>
+          <SlideShow
+            images={[`${BASE_PATH}/Subikshanprojects/LandingPage.png`]}
+          />
+          <p className="font-mono mb-2 mt-8 text-center">
+            SIGNAL IQ turns scattered business signals into a focused
+            prospecting pipeline.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    // 04. Healthcare App (In Progress)
     id: "Healthcare App",
     category: "Healthcare App",
     title: "My Healthcare App",
@@ -393,7 +633,7 @@ const projects: Project[] = [
     },
   },
   {
-    // 02. Matrimonial Software
+    // 05. Matrimonial Software
     id: "Matchmaking Pro",
     category: "Matrimonial Software",
     title: "Matchmaking Pro",
@@ -474,7 +714,7 @@ const projects: Project[] = [
     },
   },
   {
-    // 03. Portfolio project
+    // 06. Portfolio project
     id: "portfolio",
     category: "Portfolio",
     title: "My Portfolio",
@@ -543,7 +783,7 @@ const projects: Project[] = [
     },
   },
   {
-    // 04. Portfolio project
+    // 07. Portfolio project
     id: "MacOs portfolio",
     category: "Portfolio",
     title: "MacOs Theme Portfolio",
@@ -568,7 +808,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Experience my portfolio like never before - a fully interactive MacOS 
+            Experience my portfolio like never before - a fully interactive MacOS
             desktop environment that brings familiar Apple aesthetics to the web.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
@@ -576,9 +816,9 @@ const projects: Project[] = [
             Authentic MacOS Interface
           </TypographyH3>
           <p className="font-mono mb-2">
-            Every pixel crafted to mirror the real MacOS experience. From the iconic 
-            dock to the sleek window management system, navigate through my portfolio 
-            just like you would on a Mac. Click, drag, minimize, and maximize windows 
+            Every pixel crafted to mirror the real MacOS experience. From the iconic
+            dock to the sleek window management system, navigate through my portfolio
+            just like you would on a Mac. Click, drag, minimize, and maximize windows
             with that signature Apple smoothness.
           </p>
           <SlideShow
@@ -589,17 +829,17 @@ const projects: Project[] = [
           />
           <TypographyH3 className="my-4 ">Interactive Desktop Experience</TypographyH3>
           <p className="font-mono mb-2">
-            Launch applications from the dock, use Spotlight search to find content, 
-            and interact with multiple windows simultaneously. It&apos;s not just a 
+            Launch applications from the dock, use Spotlight search to find content,
+            and interact with multiple windows simultaneously. It&apos;s not just a
             portfolio - it&apos;s a fully functional desktop OS in your browser.
           </p>
           <SlideShow images={[`${BASE_PATH}/Subikshanprojects/ProjectSection.png`]} />
           <TypographyH3 className="my-4 mt-8">Native MacOS Features</TypographyH3>
 
           <p className="font-mono mb-2">
-            Complete with menu bar, system preferences, finder windows, and even 
-            the trash can. Every interaction feels natural and intuitive, just 
-            like using a real Mac. The attention to detail will make you forget 
+            Complete with menu bar, system preferences, finder windows, and even
+            the trash can. Every interaction feels natural and intuitive, just
+            like using a real Mac. The attention to detail will make you forget
             you&apos;re browsing a website.
           </p>
           <SlideShow
