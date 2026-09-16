@@ -487,10 +487,11 @@ const projects: Project[] = [
     id: "SIGNAL IQ",
     category: "AI Business Intelligence",
     title: "SIGNAL IQ",
-    src: "/assets/projects-screenshots/Subikshanprojects/LandingPage.png",
+    src: "/assets/projects-screenshots/SIGNAL-IQ/SIGNAL-IQ-01.png",
     screenshots: [
-      "/assets/projects-screenshots/Subikshanprojects/LandingPage.png",
+      "/assets/projects-screenshots/SIGNAL-IQ/SIGNAL-IQ-01.png",
     ],
+    github: "https://github.com/Subikshan0612/SIGNAL-IQ.git",
     skills: {
       frontend: [
         PROJECT_SKILLS.next, // Next.js
@@ -522,7 +523,7 @@ const projects: Project[] = [
             through the noise of manual lead research.
           </p>
           <SlideShow
-            images={[`${BASE_PATH}/Subikshanprojects/LandingPage.png`]}
+            images={[`${BASE_PATH}/SIGNAL-IQ/SIGNAL-IQ-01.png`]}
           />
           <TypographyH3 className="my-4 ">
             Business Signal Tracking
@@ -533,7 +534,7 @@ const projects: Project[] = [
             actually happening with a prospect.
           </p>
           <SlideShow
-            images={[`${BASE_PATH}/Subikshanprojects/LandingPage.png`]}
+            images={[`${BASE_PATH}/SIGNAL-IQ/SIGNAL-IQ-01.png`]}
           />
           <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
 
@@ -543,7 +544,7 @@ const projects: Project[] = [
             faster and smarter.
           </p>
           <SlideShow
-            images={[`${BASE_PATH}/Subikshanprojects/LandingPage.png`]}
+            images={[`${BASE_PATH}/SIGNAL-IQ/SIGNAL-IQ-01.png`]}
           />
           <p className="font-mono mb-2 mt-8 text-center">
             SIGNAL IQ turns scattered business signals into a focused
