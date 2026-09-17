@@ -35,7 +35,7 @@ export enum SkillNames {
   GITHUB = "github",   //
   PRETTIER = "prettier",  //
   NPM = "npm",       //
-  FIREBASE = "firebase",  //
+  CLAUDE = "claude",  //
   FASTAPI = "fastapi",  //
   NGINX = "nginx",      //
   VERCEL = "vercel",    //
@@ -181,14 +181,14 @@ using use = useUsing("use")`,
     color: "#fff",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
   },
-  [SkillNames.FIREBASE]: {
+  [SkillNames.CLAUDE]: {
     id: 17,
-    name: "firebase",
-    label: "Firebase",
+    name: "claude",
+    label: "Claude",
     shortDescription:
-      "your app's ultimate wingman, but watch out, vendor lock-in vibes! 🔥👌",
-    color: "#ffca28",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      "the AI that actually reads the docs before yapping, no cap! 🤖📖",
+    color: "#d97757",
+    icon: "https://cdn.simpleicons.org/anthropic",
   },
   [SkillNames.FASTAPI]: {
     id: 18,
