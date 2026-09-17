@@ -2,9 +2,9 @@
 export enum SkillNames {
   AWS = "aws",
   // AZURE = "azure",    // +
-  LINUX = "linux",    
+  LINUX = "linux",
   // SHELL = "shell",    // +
-  // PYTHON = "python",  // +
+  PYTHON = "python",
   GIT = "git",
   DOCKER = "docker",
   // SELENIUM = "selenium",  // +
@@ -36,9 +36,8 @@ export enum SkillNames {
   PRETTIER = "prettier",  //
   NPM = "npm",       //
   FIREBASE = "firebase",  //
-  WORDPRESS = "wordpress",  //
+  FASTAPI = "fastapi",  //
   NGINX = "nginx",      //
-  VIM = "vim",           //
   VERCEL = "vercel",    //
 }
 export type Skill = {
@@ -191,13 +190,13 @@ using use = useUsing("use")`,
     color: "#ffca28",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
-  [SkillNames.WORDPRESS]: {
+  [SkillNames.FASTAPI]: {
     id: 18,
-    name: "wordpress",
-    label: "WordPress",
-    shortDescription: "the grandpa of CMS, still rocking that cane 🧓👴",
-    color: "#007acc",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+    name: "fastapi",
+    label: "FastAPI",
+    shortDescription: "async endpoints go brrr, docs write themselves fr fr! ⚡📜",
+    color: "#009688",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
   },
   [SkillNames.LINUX]: {
     id: 19,
@@ -232,13 +231,13 @@ using use = useUsing("use")`,
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg",
   },
-  [SkillNames.VIM]: {
+  [SkillNames.PYTHON]: {
     id: 23,
-    name: "vim",
-    label: "Vim",
-    shortDescription: "exit? In this economy? Ight, imma head out! 🚪🏃",
-    color: "#e34c26",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+    name: "python",
+    label: "Python",
+    shortDescription: "that OG language that just works, indentation gang! 🐍✅",
+    color: "#3776ab",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   [SkillNames.VERCEL]: {
     id: 24,
